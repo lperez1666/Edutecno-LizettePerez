@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<title>Viajes Chile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Fonts Google Montserrat (Light 300, Medium 500 & Bold 700) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/33fc1bc4f1.js" crossorigin="anonymous"></script>
+    <!-- Mi estilo css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #2097aa;">
+        <a class="navbar-brand" href="#" style="color: white; font-weight: 300; padding: 0em 7em;">
+            <img src="assets/img/viajes.svg" width="30" height="30" class="d-inline-block align-top" alt="logo">
+            Viajes Chile
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: white;">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#featured">Destacados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- JS Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="carousel1">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="carousel2">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="carousel3">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- QUIENES SOMOS -->
+<div class="container">
+    <div class="d-none d-sm-none d-md-block">
+        <div id="about">
+            <h1>¿Quienes somos?</h1>
+            <hr />
+            <!-- sECCION DE PRESENTACIÓN -->
+            <div class="row">
+                <div class="col-md">
+                    <div class="card1" style="width: 18rem;">
+                        <div class="card-header">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                fuga
+                                blanditiis, libero facilis iusto nostrum enim ipsam molestias recusandae temporibus ex
+                                molestiae
+                                veritatis est voluptatum tempore voluptatibus exercitationem nihil non!. Lorem ipsum,
+                                dolor
+                                sit
+                                amet consectetur adipisicing elit. Atque repellat repudiandae quia distinctio porro,
+                                architecto
+                                eaque fuga, illum numquam veritatis nulla qui doloremque fugiat error eum, velit modi.
+                                Explicabo, totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga
+                                blanditiis, libero facilis iusto nostrum enim ipsam molestias recusandae temporibus ex
+                                molestiae
+                                veritatis est voluptatum tempore voluptatibus exercitationem nihil non!.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card1" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                fuga
+                                blanditiis, libero facilis iusto nostrum enim ipsam molestias recusandae temporibus ex
+                                molestiae
+                                veritatis est voluptatum tempore voluptatibus exercitationem nihil non!. Lorem ipsum,
+                                dolor
+                                sit
+                                amet consectetur adipisicing elit. Atque repellat repudiandae quia distinctio porro,
+                                architecto
+                                eaque fuga, illum numquam veritatis nulla qui doloremque fugiat error eum, velit modi.
+                                Explicabo, totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga
+                                blanditiis, libero facilis iusto nostrum enim ipsam molestias recusandae temporibus ex
+                                molestiae
+                                veritatis est voluptatum tempore voluptatibus exercitationem nihil non!.</li>
+                        </ul>
+                        <div class="card-footer">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md border-dark">
+                    <div class="card1" style="width: 18rem;">
+                        <div class="card-header">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                                fuga
+                                blanditiis, libero facilis iusto nostrum enim ipsam molestias recusandae temporibus ex
+                                molestiae
+                                veritatis est voluptatum tempore voluptatibus exercitationem nihil non!. Lorem ipsum,
+                                dolor
+                                sit
+                                amet consectetur adipisicing elit. Atque repellat repudiandae quia distinctio porro,
+                                architecto
+                                eaque fuga, illum numquam veritatis nulla qui doloremque fugiat error eum, velit modi.
+                                Explicabo, totam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga
+                                blanditiis, libero facilis iusto nostrum enim ipsam molestias recusandae temporibus ex
+                                molestiae
+                                veritatis est voluptatum tempore voluptatibus exercitationem nihil non!.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CARDS DESTACADOS -->
+<div class="container">
+    <section id="featured">
+        <h1>Destacados</h1>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-light mb-3" style="width: 16rem;">
+                            <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Tenetur
+                                    ducimus vel praesentium eum tempore atque consectetur vitae! Et soluta ipsa
+                                    ipsum,
+                                    reiciendis neque eligendi ducimus, hic illum aperiam delectus aliquid!</p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                                    data-target="#card1" style="color: white; border-color: white;">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-light mb-3" style="width: 16rem;">
+                            <img src="assets/img/card2.jpg" class="card-img-top" alt="card2">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Tenetur
+                                    ducimus vel praesentium eum tempore atque consectetur vitae! Et soluta ipsa
+                                    ipsum,
+                                    reiciendis neque eligendi ducimus, hic illum aperiam delectus aliquid!</p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                                    data-target="#card2" style="color: white; border-color: white;">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-light mb-3" style="width: 16rem;">
+                            <img src="assets/img/card3.jpg" class="card-img-top" alt="card3">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Tenetur
+                                    ducimus vel praesentium eum tempore atque consectetur vitae! Et soluta ipsa
+                                    ipsum,
+                                    reiciendis neque eligendi ducimus, hic illum aperiam delectus aliquid!</p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                                    data-target="#card3" style="color: white; border-color: white;">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-light mb-3" style="width: 16rem;">
+                            <img src="assets/img/card4.jpg" class="card-img-top" alt="card4">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Tenetur
+                                    ducimus vel praesentium eum tempore atque consectetur vitae! Et soluta ipsa
+                                    ipsum,
+                                    reiciendis neque eligendi ducimus, hic illum aperiam delectus aliquid!</p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                                    data-target="#card4" style="color: white; border-color: white;">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Card1-->
+        <div class="modal fade" id="card1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #2097aa;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="card1">Lorem ipsum dolor sit amet</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mb-3" src="assets/img/card1.jpg" alt="Card1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia repudiandae quae,
+                            ipsum aspernatur sunt impedit numquam quod explicabo facilis fugit necessitatibus eos, ea
+                            corrupti hic iure delectus cum qui.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cupiditate quisquam quas vitae
+                            consequuntur quis fugiat, id ullam illo doloribus praesentium repudiandae explicabo
+                            quibusdam. Sint exercitationem autem animi laborum expedita.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui cupiditate impedit nobis minus
+                            repellat aut sint ullam cum temporibus veritatis! Et quae cupiditate laboriosam ipsa, amet
+                            eaque ex minima labore.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-toggle="tooltip" data-placement="top"
+                            title="Volver a la pagina principal" class="btn btn-secondary" data-dismiss="modal"
+                            style="background-color: #2097aa; border-color: white;">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Card2 -->
+        <div class="modal fade" id="card2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #2097aa;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="card2">Lorem ipsum dolor sit amet</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mb-3" src="assets/img/card2.jpg" alt="Card2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia repudiandae quae,
+                            ipsum aspernatur sunt impedit numquam quod explicabo facilis fugit necessitatibus eos, ea
+                            corrupti hic iure delectus cum qui.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cupiditate quisquam quas vitae
+                            consequuntur quis fugiat, id ullam illo doloribus praesentium repudiandae explicabo
+                            quibusdam. Sint exercitationem autem animi laborum expedita.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui cupiditate impedit nobis minus
+                            repellat aut sint ullam cum temporibus veritatis! Et quae cupiditate laboriosam ipsa, amet
+                            eaque ex minima labore.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-toggle="tooltip" data-placement="top"
+                            title="Volver a la pagina principal" class="btn btn-secondary" data-dismiss="modal"
+                            style="background-color: #2097aa; border-color: white;">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal card3 -->
+        <div class="modal fade" id="card3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #2097aa;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="card3">Lorem ipsum dolor sit amet</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mb-3" src="assets/img/card3.jpg" alt="Card3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia repudiandae quae,
+                            ipsum aspernatur sunt impedit numquam quod explicabo facilis fugit necessitatibus eos, ea
+                            corrupti hic iure delectus cum qui.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cupiditate quisquam quas vitae
+                            consequuntur quis fugiat, id ullam illo doloribus praesentium repudiandae explicabo
+                            quibusdam. Sint exercitationem autem animi laborum expedita.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui cupiditate impedit nobis minus
+                            repellat aut sint ullam cum temporibus veritatis! Et quae cupiditate laboriosam ipsa, amet
+                            eaque ex minima labore.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-toggle="tooltip" data-placement="top"
+                            title="Volver a la pagina principal" class="btn btn-secondary" data-dismiss="modal"
+                            style="background-color: #2097aa; border-color: white;">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal card4 -->
+        <div class="modal fade" id="card4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #2097aa;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="card4">Lorem ipsum dolor sit amet</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mb-3" src="assets/img/card4.jpg" alt="Card4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia repudiandae quae,
+                            ipsum aspernatur sunt impedit numquam quod explicabo facilis fugit necessitatibus eos, ea
+                            corrupti hic iure delectus cum qui.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cupiditate quisquam quas vitae
+                            consequuntur quis fugiat, id ullam illo doloribus praesentium repudiandae explicabo
+                            quibusdam. Sint exercitationem autem animi laborum expedita.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui cupiditate impedit nobis minus
+                            repellat aut sint ullam cum temporibus veritatis! Et quae cupiditate laboriosam ipsa, amet
+                            eaque ex minima labore.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-toggle="tooltip" data-placement="top"
+                            title="Volver a la pagina principal" class="btn btn-secondary" data-dismiss="modal"
+                            style="background-color: #2097aa; border-color: white;">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- CONTACTO -->
+<div class="container">
+    <section id="contact">
+        <h1>Contacto</h1>
+        <hr />
+        <!-- TYPEFORM -->
+        <div class="typeform-widget" data-url="https://form.typeform.com/to/AzyBZqjY?typeform-medium=embed-snippet"
+            style="width: 100%; height: 500px;"></div>
+        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+        <BR>
+
+        <!-- Jquery v.3.5.1 -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <!-- Popper JS v1.16.1 -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <!-- Botstrap v4.6.0 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
+    </section>
+</div>
+<footer>
+    <section id="redes-sociales">
+        <div class="row align-items-center">
+            <div class="col">
+                <h4>VIAJES CHILE</h4>
+            </div>
+            <div class="col">
+                <article class="icon" style="text-align: right;">
+                    <a href="https://github.com/"><i class="fab fa-github-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>
+                </article>
+            </div>
+    </section>
+</footer>
+</body>
+
+</html>
