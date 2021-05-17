@@ -1,0 +1,107 @@
+/* Colores:
+#212529;
+#707070;
+#F8F9FA o var(--light);
+#fff o var(--white);
+#28a745 o var(--success);
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 13px;
+    text-align: left;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+    color: #DDDDDD;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+i{
+    color: #707070;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+
+#navbarSupportedContent{
+    font-size: 16px;
+}
+
+/* Grid */
+.price{
+	text-align: right;
+}
+
+.orig-price{
+    font-weight: 300;
+    font-size: 16px;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+}
+
+.desc-price{
+    font-weight: 500;
+    font-size: 20px;
+    color: #28A745;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form */
+form{
+    margin: 20px;
+}
+
+.text-white{
+    text-align: center;
+    font-weight: 500;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Footer */
+.fondo{
+    text-align: center;
+    padding-top: 30px;
+}
