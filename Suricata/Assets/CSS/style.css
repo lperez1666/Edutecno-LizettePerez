@@ -1,0 +1,106 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  color: #707070;
+  font-weight: bold;
+  font-size: 60px;
+  padding: 82px 5px 82px 5px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h4{
+    text-align: left;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+/* Navbar */
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+}
+#navbarSupportedContent{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+/* Grid */
+
+.container{
+    padding: 0em 0em 8em 1em;
+}
+
+
+.photo img{
+    width: 280px;
+    height: 150px;
+}
+
+
+.title{
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+.texto{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul {
+    margin: 5px;
+    padding: 5px;
+}
+
+.links{
+    margin: 5px;
+    padding: 5px;
+    font-size: 11px;
+    font-weight: normal;
+    color: #1C7CD5;
+
+}
+    
+/* Medios de Pago */
+.d-flex{
+    justify-content: space-around;
+}
+#pagos{
+    background-color: #17A2B8;
+    color: #ffffff;
+    padding: 4em 4em 4em 4em;
+}
+
+i {
+    margin-right: 18px;
+}
+
+/* Logo Final */
+.logo{
+    background-color: #E83E8C;
+    color: #ffffff;
+    text-align: center;
+    padding: 3em;
+}
+
+.logo img{
+    width: 53px;
+    height: 100px;
+}
+
