@@ -1,0 +1,11 @@
+.button{
+    margin-bottom: 2em;
+    background-color: $nickel;
+    font-family: $roboto;
+    font-size: $small;
+}
+
+.button:hover {
+    background-color: $Light-Gray;
+    border-color: $Light-Gray;
+  }

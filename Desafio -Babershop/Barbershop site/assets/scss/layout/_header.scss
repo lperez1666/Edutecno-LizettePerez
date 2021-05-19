@@ -1,0 +1,16 @@
+.header {
+  background-image: url(../img/post-image.jpg);
+  background-size: cover;
+  height: 100%;
+
+}
+
+.header__tittle {
+  font-family: $playfair;
+  font-weight: bolder;
+  font-size: $xx-large;
+  font-style: italic;
+  padding-top: 8rem;
+  color: $white;
+  text-align: center;
+}

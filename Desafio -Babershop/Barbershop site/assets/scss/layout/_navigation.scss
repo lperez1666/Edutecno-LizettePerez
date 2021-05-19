@@ -1,0 +1,30 @@
+.page {
+  background-color: $Platinum;
+  padding: 2em;
+  margin: 0;
+}
+
+.page-link {
+  background-color: $white;
+  color: $eerie-black;
+  font-family: $roboto;
+  font-size: $small;
+}
+
+.page-item.active {
+  .page-link {
+    color: $white;
+    background-color: $nickel;
+    border: none;
+  }
+}
+
+.page-link:focus {
+  color: $white;
+  background-color: $nickel;
+}
+
+.page-link:hover {
+  color: $white;
+  background-color: $Light-Gray;
+}

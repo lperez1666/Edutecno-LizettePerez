@@ -1,0 +1,35 @@
+.card {
+  margin: 0;
+}
+
+.author__card__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  margin-top: 1.5em;
+  margin-left: 1em;
+}
+
+.card-body {
+  margin: 0;
+  text-align: center;
+}
+
+.card-title {
+  font-family: $playfair;
+  font-weight: 900;
+  font-style: italic;
+  font-size: x-large;
+}
+
+.card-link {
+  text-align: center;
+}
+
+.card-text {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: $small;
+  text-align: left;
+  padding-top: 5em;
+}
