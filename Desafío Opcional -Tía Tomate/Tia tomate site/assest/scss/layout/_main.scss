@@ -1,0 +1,71 @@
+
+.main{
+    color: $white;
+    font-family: $Raleway;
+    text-align: center;
+}
+
+/* 1ra seccion roja */
+.red__section{
+    background-color: $Jelly-Bean;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+/* 1ra seccion gris */
+.gray__section{
+    background-color: $Taupe-Gray;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.gray__section--img{
+    width: 70%;
+}
+
+
+/* 1ra seccion blanca */
+.white__section{
+    padding-top: 6em;
+    padding-bottom: 6em;
+    color: $Granite-Gray;
+}
+
+.white__section--img{
+        width: 70%;
+}
+
+/* 2da seccion roja */
+.red__section2{
+    background-color: $Jelly-Bean;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+
+/* 2da seccion blanca */
+.white__section2{
+    padding-top: 6em;
+    padding-bottom: 6em;
+    color: $Granite-Gray;
+}
+
+.white__section2--img{
+    width: 30%;
+}
+
+.white__section2--img2{
+    padding-top: 3em;
+    width: 30%;
+}
+
+/* 3ra seccion roja */
+.red__section3{
+    background-color: $Jelly-Bean;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.red__section3--h2{
+    font-size: $large;
+}
