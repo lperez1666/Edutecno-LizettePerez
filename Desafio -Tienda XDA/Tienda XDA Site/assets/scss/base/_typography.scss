@@ -1,0 +1,22 @@
+h1 {
+  font-family: $old-standard-tt;
+  font-weight: $bold;
+  @include relative-converter(font-size, rem, 50, 16);
+}
+
+
+p{
+  font-family: $raleway;
+  font-size: $medium;
+  font-weight: $regular;
+}
+
+h2{
+font-family: $old-standard-tt;
+}
+
+h5{
+font-family: $old-standard-tt;
+font-size: $medium;
+font-weight: $bold;
+}

@@ -1,0 +1,134 @@
+.navigation {
+  position: relative;
+  justify-content: flex-end;
+  height: 6rem;
+}
+
+.navigation__logo img {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 100%;
+}
+
+.collapsible {
+  text-align: left;
+
+  label {
+    display: block;
+    padding-right: 1.5em;
+    font-size: 1.8rem;
+
+    i {
+      cursor: pointer;
+      padding: 5px;
+    }
+  }
+}
+
+#menu {
+  display: block;
+}
+
+input:checked ~ .navigation__container {
+  max-height: 100%;
+  display: block;
+  height: auto;
+}
+
+.navigation__container {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $white;
+}
+
+.navigation__list {
+  list-style-type: none;
+  text-align: left;
+}
+
+.navigation__item {
+  a {
+    display: block;
+    text-align: left;
+    font-family: $raleway;
+    font-weight: $bold;
+    text-decoration: none;
+    color: $smoky-black;
+    
+
+    &:hover {
+      color: $smoky-black;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation__list {
+    display: block;
+  }
+
+  .collapsible {
+    label {
+      display: none;
+    }
+  }
+
+  .navigation__container {
+    max-height: 100%;
+    padding: 0.5em 3em 0.5em 0;
+    overflow: visible;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: inherit;
+    padding: inherit;
+  }
+
+  .navigation__item {
+    a {
+        font-size: $large;
+        font-weight: $regular;
+        font-weight: $bold;
+        font-family: $raleway;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation__list {
+    display: block;
+  }
+
+  .collapsible {
+    label {
+      display: none;
+    }
+  }
+
+  .navigation__container {
+    max-height: 100%;
+    padding: 0.5em 3em 0.5em 0;
+    overflow: visible;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: inherit;
+    padding: inherit;
+  }
+
+  .navigation__item {
+    a {
+      padding: 0.5em 1em;
+      font-size: $large;
+      font-weight: $regular;
+      font-weight: $bold;
+      font-family: $raleway;
+    }
+  }
+}
