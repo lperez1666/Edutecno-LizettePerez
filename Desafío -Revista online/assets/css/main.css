@@ -1,0 +1,219 @@
+/* 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+ */
+body {
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: monospace;
+}
+
+.header {
+  display: inline-block;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+
+.navigation {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation__menu {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.navigation__logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.navigation__nav {
+  display: inline-block;
+  text-align: right;
+  width: 90%;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+
+.navigation__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline;
+  float: left;
+}
+.navigation__item a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.navigation__item a:hover {
+  color: #000;
+}
+
+.navigattion__button--input {
+  border-radius: 30px;
+  margin-top: 7px;
+}
+
+@media (max-width: 768px) {
+  .navigation__nav {
+    width: 50%;
+  }
+  .navigation__nav li {
+    width: 25%;
+  }
+
+  .navigation__nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  .navigattion__button--input {
+    margin-left: 2rem;
+    width: 8rem;
+    font-size: 0.8rem;
+  }
+
+  .navigation .navigation__nav li:first-child {
+    display: none;
+  }
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main {
+  clear: both;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 700fr 220fr;
+  gap: 20px;
+}
+
+/* IZQUIERDA */
+.main__left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  margin: auto;
+}
+.main__left .main__left--news {
+  display: inline-block;
+}
+.main__left .main__left--text--p {
+  padding: 5px 10px;
+}
+.main__left .main__left--tittle--h2 {
+  padding: 2px;
+}
+.main__left .main__left--text--img {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+/* DERECHA */
+.main__right {
+  width: 220px;
+  float: right;
+}
+.main__right .main__right--us {
+  width: 220px;
+  border-bottom: 1px solid gray;
+}
+.main__right .main__right--tags {
+  border-bottom: 1px solid gray;
+}
+.main__right .main__right--tags--lista {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.main__right .main__right--tags--items {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  margin-top: 1px;
+  color: white;
+  display: inline-block;
+}
+.main__right .main__right--news {
+  margin-bottom: 50px;
+}
+.main__right .main__right--news--item--img {
+  width: 220px;
+  height: 200px;
+}
+
+/*  */
+@media (max-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main .main__left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .main .main__right {
+    display: none;
+  }
+}
+.newsletter {
+  background-color: #ccc;
+  text-align: center;
+  padding: 2rem;
+}
+
+.button {
+  background-color: coral;
+  padding: 5px;
+  color: white;
+  border: 0;
+}
+
+.newsletter__input {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 0px;
+}
+
+/*# sourceMappingURL=main.css.map */
