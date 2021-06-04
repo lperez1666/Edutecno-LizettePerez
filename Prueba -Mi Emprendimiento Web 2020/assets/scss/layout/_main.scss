@@ -1,0 +1,126 @@
+.main {
+  width: 100%;
+}
+
+.main_container {
+  clear: both;
+  margin: auto;
+  display: grid;
+}
+
+/* IZQUIERDA */
+.main__left {
+  margin: 10px;
+  border: 1px solid $black;
+  padding: 1em;
+
+  &--HTML {
+    padding: 1em;
+    border: 1px solid $black;
+    border-style: dotted;
+    margin-bottom: 1em;
+  }
+
+  &--SASS {
+    padding: 1em;
+    border: 1px solid $black;
+    border-style: dotted;
+  }
+
+  &--img {
+    width: 100%;
+  }
+
+  &--icons {
+    :active,
+    :hover {
+      color: $orange;
+    }
+
+    &--a {
+      padding: 0em 0.25em;
+      color: $black;
+    }
+  }
+
+  &--text--h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+  }
+}
+
+/* DERECHA */
+.main__right {
+  margin: 10px;
+  border: 1px solid $black;
+  padding: 1em;
+
+  &--CURSOS {
+    padding: 1em;
+  }
+
+  &--img {
+    width: 100%;
+  }
+
+  &--img1 {
+    width: 30%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 1px solid $black;
+  }
+
+  &--icons {
+    text-align: center;
+    padding: 0.5em 0em;
+    :active,
+    :hover {
+      color: $orange;
+    }
+
+    &--a {
+      padding: 0em 0.25em;
+      color: $black;
+    }
+  }
+
+  &--text--h1 {
+    padding: 0.5em 0em;
+  }
+
+  &--tittle--h2 {
+    width: 100%;
+    background-color: $charcoal;
+  }
+
+  &--list {
+    &--ul {
+      list-style: none;
+      padding: 0;
+      margin-left: 10px;
+
+      a {
+        color: $charcoal;
+      }
+    }
+
+    &--li::before {
+      content: "\26AC";
+      padding-right: 8px;
+      color: $black;
+    }
+
+    :active,
+    :hover {
+      color: $orange;
+    }
+  }
+
+  &--svg {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+/* SVG */
