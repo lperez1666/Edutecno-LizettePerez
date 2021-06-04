@@ -1,0 +1,28 @@
+.button1{
+    border: 0;
+    background-color: $blue-sky;
+    color: $white;
+    padding: 0.25em 0.50em;
+    margin-right: 10px;
+    font-family: $lato;
+    font-weight: $regular;
+}
+
+.button2{
+    border: 0;
+    background-color: $ruddy-pink;
+    color: $white;
+    padding: 0.25em 0.50em;
+    font-family: $lato;
+    font-weight: $regular;
+}
+
+
+@media (max-width: $sm){
+    .container__perfil--buttom{
+        display: none;
+    }
+    .perfil {
+        border-bottom: 0px
+    }
+}

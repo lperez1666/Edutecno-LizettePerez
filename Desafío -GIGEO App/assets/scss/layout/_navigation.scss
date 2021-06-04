@@ -1,0 +1,31 @@
+.navigation__logo{
+    padding: 0 3em;
+}
+
+.navbar-brand--logo {
+  font-family: $lato;
+  color: $eerie-black;
+  font-weight: $bold;
+  text-transform: uppercase;
+  font-size: $x-large;
+}
+
+.navbar-brand--art {
+  font-family: $lato;
+  color: $eerie-black;
+  font-size: $small;
+  text-transform: uppercase;
+  vertical-align: top;
+  font-weight: $bold;
+}
+
+.navbar-nav{
+    padding: 0 3em;
+}
+
+.nav-item{
+    padding: 0em 1em;
+    i{
+        color: $eerie-black;
+    }
+}

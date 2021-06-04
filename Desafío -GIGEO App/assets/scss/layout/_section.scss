@@ -1,0 +1,23 @@
+.perfil {
+  display: flex;
+  padding: 1em 2.75em;
+  border-bottom: 1px solid $light-gray;
+}
+
+.container__perfil--text {
+  margin-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+.container__perfil--buttom {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container__perfil--img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}

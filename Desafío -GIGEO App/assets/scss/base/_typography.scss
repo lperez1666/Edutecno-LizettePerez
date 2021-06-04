@@ -1,0 +1,41 @@
+h1 h2 h3 h4 h5 h6 p {
+  font-family: $lato;
+}
+/* PERFIL */
+.tittle__h1 {
+  font-size: $x-large;
+  font-weight: $bold;
+  font-family: $lato;
+  margin: auto;
+}
+
+.container__perfil--text--h2 {
+  font-size: $large;
+  font-weight: $bold;
+  font-family: $lato;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container__perfil--text--h3 {
+  font-size: $medium;
+  font-family: $lato;
+  font-weight: $regular;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: $nickel;
+}
+
+/* MAIN */
+.card-tittle {
+  font-size: $large;
+  font-weight: $bold;
+  font-family: $lato;
+}
+
+.card-text {
+  font-size: $medium;
+  font-family: $lato;
+  font-weight: $regular;
+  color: $nickel;
+}
