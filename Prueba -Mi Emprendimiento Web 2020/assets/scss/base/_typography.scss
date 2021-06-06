@@ -1,0 +1,65 @@
+h1 h2 h3 h4 h5 h6 {
+  font-family: $ubuntu;
+  text-align: justify;
+}
+
+.main__left {
+  &--text--h1 {
+    font-family: $ubuntu;
+    font-weight: $bold;
+    font-size: $x-large;
+  }
+
+  &--text--p {
+    font-family: $ubuntu;
+    font-weight: $regular;
+    font-size: $medium;
+    text-align: justify;
+  }
+
+  &--text--h3 {
+    font-family: $ubuntu;
+    font-weight: $bold;
+    font-size: $large;
+    text-align: justify;
+  }
+}
+
+.main__right {
+  &--text--h1 {
+    font-family: $ubuntu;
+    font-weight: $bold;
+    font-size: $large;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &--text--p {
+    font-family: $ubuntu;
+    font-weight: $regular;
+    font-size: $medium;
+    text-align: justify;
+  }
+
+  &--text--h3 {
+    font-family: $ubuntu;
+    font-weight: $bold;
+    font-size: $large;
+    text-align: justify;
+  }
+
+  &--tittle--h2 {
+    font-family: $poppins;
+    font-weight: $bold;
+    font-size: $large;
+    text-align: center;
+    color: $white;
+  }
+
+  &--list--li {
+    font-family: $poppins;
+    font-weight: $regular;
+    font-size: $medium;
+    text-align: justify;
+  }
+}

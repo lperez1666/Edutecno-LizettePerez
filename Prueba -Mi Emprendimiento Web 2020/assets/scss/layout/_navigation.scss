@@ -1,0 +1,67 @@
+.navigation {
+  background-color: $black;
+  font-family: $poppins;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 2em;
+
+  &__logo--img {
+    width: 2rem;
+  }
+
+  &__collapsible {
+    label {
+      display: block;
+    }
+  }
+
+  &__list {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin: 0px;
+  }
+
+  &__item {
+    list-style-type: none;
+    display: inline;
+    padding-right: 5px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    :active,
+    :hover {
+      color: $orange;
+    }
+  }
+}
+
+.fas {
+  color: $white;
+}
+
+.fa-bars:hover {
+  color: $orange;
+}
+
+.fa-bars:active {
+  color: $orange;
+}
+
+@media screen and (min-width: 768px) {
+  .collapsible {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation__container {
+    display: none;
+    justify-content: space-between;
+  }
+}

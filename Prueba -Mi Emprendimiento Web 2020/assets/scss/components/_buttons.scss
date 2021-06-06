@@ -1,0 +1,10 @@
+.footer__newsletter--group{
+    font-family: $poppins;
+    font-size: $small;
+
+    :active,
+    :hover {
+        background-color: $orange;
+        
+    }
+}
