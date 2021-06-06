@@ -1,4 +1,0 @@
-@mixin relative-converter($property, $unit, $target, $context) {
-    $result: ($target / $context);
-    }
-    
