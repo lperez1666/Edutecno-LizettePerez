@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro Médico Ñuñoa</title>
+    <style>
+        p {
+            color: #2dccd3;
+            /* #88dbdf  #2dccd3 #FFF #000 #858f8f */
+            font-size: 35px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+            
+        }
+
+        #btn-dental,
+        #btn-radio,
+        #btn-trauma {
+            margin: 2em;
+            font-size: 16px;
+            color: #858f8f;
+        }
+
+        h1{
+            color: #858f8f;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        table{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #2dccd3;
+
+        }
+
+        td {
+            background-color: white;
+            color: #858f8f;
+            text-align: center;
+        }
+
+        th{
+            color: white;
+            background-color: #2dccd3;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container align-content-center">
+
+        
+
+        <button id="btn-radio" style="background-color: #fff; border-color: #88dbdf;">Consultas
+            Radiologia</button>
+
+        <button id="btn-trauma" style="background-color: #fff; border-color: #88dbdf;">Consultas
+            Traumátologo</button>
+        <button id="btn-dental" style="background-color: #fff; border-color: #88dbdf;">Consultas
+            Dentales</button>
+
+            <h1 id="tittle"></h1>
+
+            <table id="cuerpo-tabla">
+
+            </table>
+    </div>
+
+    <script>
+        let radiologia = [
+            {
+                horario: "11:00",
+                especialista: "IGNACIO SCHULZ",
+                paciente: "FRANCISCA ROJAS",
+                rut: "9878782-1",
+                prevencion: "FONASA"
+            },
+            {
+                horario: "11:30",
+                especialista: "FEDERICO SUBERCASEAUX",
+                paciente: "PAMELA ESTRADA",
+                rut: "15345241-3",
+                prevencion: "ISAPRE"
+            },
+            {
+                horario: "15:00",
+                especialista: "FERNANDO WURTHZ",
+                paciente: "ARMANDO LUNA",
+                rut: "16445345-9",
+                prevencion: "ISAPRE"
+            },
+            {
+                horario: "15:30",
+                especialista: "ANA MARIA GODOY",
+                paciente: "MANUEL GODOY",
+                rut: "17666419-0",
+                prevencion: "FONASA"
+            },
+            {
+                horario: "16:00",
+                especialista: "PATRICIA SUAZO",
+                paciente: "RAMON ULLOA",
+                rut: "14989389-K",
+                prevencion: "FONASA"
+            },
+        ];
+
+        let traumatologia = [
+            {
+                horario: "8:00",
+                especialista: "MARIA PAZ ALTUZARRA",
+                paciente: "PAULA SANCHEZ",
+                rut: "15554774-5",
+                prevencion: "FONASA"
+            },
+            {
+                horario: "10:00",
+                especialista: "RAUL ARAYA",
+                paciente: "ANGÉLICA NAVAS",
+                rut: "15444147-9",
+                prevencion: "ISAPRE"
+            },
+            {
+                horario: "10:30",
+                especialista: "MARIA ARRIAGADA",
+                paciente: "ANA KLAPP",
+                rut: "17879423-9",
+                prevencion: "ISAPRE"
+            },
+            {
+                horario: "11:00",
+                especialista: "ALEJANDRO BADILLA",
+                paciente: "FELIPE MARDONES",
+                rut: "1547423-6",
+                prevencion: "ISAPRE"
+            },
+            {
+                horario: "11:30",
+                especialista: "CECILIA BUDNIK",
+                paciente: "DIEGO MARRE",
+                rut: "16554741-K",
+                prevencion: "FONASA"
+            },
+            {
+                horario: "12:00",
+                especialista: "ARTURO CAVAGNARO",
+                paciente: "CECILIA MENDEZ",
+                rut: "9747535-8",
+                prevencion: "ISAPRE"
+            },
+            {
+                horario: "12:30",
+                especialista: "ANDRES KANACRI",
+                paciente: "MARCIAL SUAZO",
+                rut: "11254785-5",
+                prevencion: "ISAPRE"
+            },
+        ];
+
+        let dental = [
+            {
+                horario: "8:30",
+                especialista: "ANDREA ZUÑIGA",
+                paciente: "MARCELA RETAMAL",
+                rut: "11123425-6",
+                prevencion: "ISAPRE"
+            },
+            {
+                horario: "11:00",
+                especialista: "MARIA PIA ZAÑARTU",
+                paciente: "ANGEL MUÑOZ",
+                rut: "9878789-2",
+                prevencion: "ISAPRE"
+            },
+            {
+                horario: "11:30",
+                especialista: "SCARLETT WITTING",
+                paciente: "MARIO KAST",
+                rut: "7998789-5",
+                prevencion: "FONASA"
+            },
+            {
+                horario: "13:00",
+                especialista: "FRANCISCO VON TEUBER",
+                paciente: "KARIN FERNANDEZ",
+                rut: "18887662-K",
+                prevencion: "FONASA"
+            },
+            {
+                horario: "13:30",
+                especialista: "EDUARDO VIÑUELA",
+                paciente: "HUGO SANCHEZ",
+                rut: "17665461-4",
+                prevencion: "FONASA"
+            },
+            {
+                horario: "14:00",
+                especialista: "RAQUEL VILLASECA",
+                paciente: "ANA SEPULVEDA",
+                rut: "14441281-0",
+                prevencion: "ISAPRE"
+            },
+        ];
+
+        document.write('<p>Estadisticas Centro Medico Ñuñoa</p>');
+
+
+        /* RADIOLOGIA */
+        mostrarRadio = () => {
+            var texto = "<tr><th>HORARIO</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVENCION</th></tr>";
+            for (var i = 0; i < radiologia.length; i++) {
+                texto += `<tr>
+                <td>${radiologia[i].horario}</td>
+                <td>${radiologia[i].especialista}</td>
+                <td>${radiologia[i].paciente}</td>
+                <td>${radiologia[i].rut}</td>
+                <td>${radiologia[i].prevencion}</td>
+                </tr>`;
+            }
+            document.getElementById("cuerpo-tabla").innerHTML = texto;
+        }
+
+        let botonRadio = document.getElementById("btn-radio");
+        botonRadio.addEventListener("click", function (e) {
+            e.preventDefault();
+            mostrarRadio("radio");
+            document.getElementById("tittle").innerHTML = `Primera Atención: ${radiologia[0].paciente} - ${radiologia[0].prevencion}  <br><br>  Última atención: ${radiologia[(radiologia.length-1)].paciente} - ${radiologia[(radiologia.length-1)].prevencion}<br><br>`;
+        } 
+        )
+
+
+        /* TRAUMATOLAGIA */
+        mostrarTrauma = () => {
+            var texto = "<tr><th>HORARIO</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVENCION</th></tr>";            
+            for (var i = 0; i < traumatologia.length; i++) {
+                texto += `<tr>
+                <td>${traumatologia[i].horario}</td>
+                <td>${traumatologia[i].especialista}</td>
+                <td>${traumatologia[i].paciente}</td>
+                <td>${traumatologia[i].rut}</td>
+                <td>${traumatologia[i].prevencion}</td>
+                </tr>`;
+            }
+            document.getElementById("cuerpo-tabla").innerHTML = texto;
+            
+        }
+
+        let botonTrauma = document.getElementById("btn-trauma");
+        botonTrauma.addEventListener("click", function (e) {
+            e.preventDefault();
+            mostrarTrauma("trauma");
+            document.getElementById("tittle").innerHTML = `Primera Atención: ${traumatologia[0].paciente} - ${traumatologia[0].prevencion}  <br><br>  Última atención: ${traumatologia[(traumatologia.length-1)].paciente} - ${traumatologia[(traumatologia.length-1)].prevencion}<br><br>`;
+            
+        });
+
+        /* DENTAL */
+        mostrarDental = () => {
+            var texto = " <tr><th>HORARIO</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVENCION</th></tr></thead> ";
+            for (var i = 0; i < dental.length; i++) {
+                texto += `<tr>
+                <td>${dental[i].horario}</td>
+                <td>${dental[i].especialista}</td>
+                <td>${dental[i].paciente}</td>
+                <td>${dental[i].rut}</td>
+                <td>${dental[i].prevencion}</td>
+                </tr>`;
+            }
+            document.getElementById("cuerpo-tabla").innerHTML = texto;
+        }
+
+        let botonDental = document.getElementById("btn-dental");
+        let tittle = document.getElementById("tittle");
+        botonDental.addEventListener("click", function (e) {
+            e.preventDefault();
+            mostrarDental("dental");
+            document.getElementById("tittle").innerHTML = `Primera Atención: ${dental[0].paciente} - ${dental[0].prevencion}  <br><br>  Última atención: ${dental[(dental.length-1)].paciente} - ${dental[(dental.length-1)].prevencion}<br><br>`;
+        });
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
